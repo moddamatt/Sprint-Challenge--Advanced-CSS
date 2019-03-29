@@ -1,1 +1,28 @@
 // Navigation code here
+.Nav {
+
+    .flex(column, center);
+    align-items: center;
+     
+    .Title {
+        font-size: 5rem;
+    }
+
+    .Links {
+        .flex(row, center);
+    } 
+    
+    a {
+        font-size: 2.5rem;
+        text-decoration: none;
+        margin: 0 5rem 0;
+    }
+
+    @media @mobile {
+        a {
+            font-size: .5rem;
+            text-decoration: none;
+            margin: 0 0 0;
+        }
+    }
+}
