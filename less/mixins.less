@@ -1,1 +1,34 @@
 // Mixins Here
+.btn-prefab(@width, @height, @radius, @bgColor, @fontColor, @txt-size) {
+    width: @width;
+    height: @height;
+    border-radius: @radius;
+    color: @fontColor;
+    background-color: @bgColor;
+    font-size: @txt-size;
+    text-align: center;
+    padding: 6.5px 0 0;
+
+
+    &:hover {
+        color: @bgColor;
+        background-color: @fontColor;
+    }
+
+    @media @phone{
+        width: 100%;
+        height: 40px;
+        font-size: 2.5rem;
+    }
+}
+
+.flex(@direction, @justify) {
+
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+}
+
+.border() {
+    border: 2px solid black;
+}
